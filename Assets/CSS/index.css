@@ -1,0 +1,110 @@
+h1 {
+    color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* First Div */
+.contain {
+    width: 90%;
+    height: 300px;
+    margin: 20px auto 0 auto;
+    background-color: rgb(0, 0, 0);
+    padding: 25px;
+}
+
+/* Second Div */
+.container {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto 20px auto;
+    background-color: rgb(0, 0, 0);
+    padding:0 25px 25px 25px;
+}
+
+.a {
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    border: none;
+    float: left;
+    position: relative;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    color: purple;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 8px;
+}
+
+.b {
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    border: none;
+    float: right;
+    position: relative;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    color: red;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 8px;
+}
+
+@keyframes bounce {
+    0%{top:0px;}
+    10%{top:30px;}
+    20%{top: 60px;}
+    30%{top:90px;}
+    40%{top:120px;}
+    50%{top:150px;}
+    60%{top:180px;}
+    70%{top:210px;}
+    80%{top:240px;}
+    90%{top: 270px;}
+    100%{top: 300px;}
+}
+
+
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: goldenrod;
+    margin-left: 35px;  
+    margin-top: 295px;  
+    position: relative;
+    animation-name: roll;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes roll {
+    0%{top: 0px; left: 0px;}
+    5.88%{top: -15px; left: 58.8px;}
+    11.76%{top: -30px; left: 117.6px;}
+    17.64%{top: -45px; left: 176.4px;}
+    23.52%{top: -60px; left: 235.2px;}
+    29.4%{top: -75px; left: 294px;}
+    35.28%{top: -90px; left: 352.8px;}
+    41.16%{top: -105px; left: 411.6px;}
+    47.04%{top: -120px; left:470.4px;}
+    /* 52.92%{top: -150px; left: 529.2px;} */
+    58.8%{top:-120px; left: 588px;}
+    64.68%{top:-105px; left: 646.8px;}
+    70.56%{top:-75px; left: 705.6px;}
+    76.44%{top:-60px; left: 764.4px;}
+    82.32%{top:-45px; left: 823.2px;}
+    88.2%{top:-30px; left: 882px;}
+    94.08%{top:-15px; left: 940.8px;}
+    100%{top:-0px; left: 1000px;}
+}
+
